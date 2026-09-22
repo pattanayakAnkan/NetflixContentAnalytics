@@ -1,0 +1,39 @@
+# =============================================================================
+# requirements.txt
+# Project : Netflix Content Analytics
+# Author  : Ankan
+# Python  : 3.10 or later
+# Install : pip install -r requirements.txt
+# =============================================================================
+
+# ── Data analysis ─────────────────────────────────────────────────────────────
+# pandas  — DataFrame operations, groupby, pivot, explode, to_datetime,
+#           str.extract, dt accessors, nullable Int16/Int8 dtypes, pct_change
+pandas>=2.0.0
+
+# numpy   — np.nan, np.where, np.array, quantile arithmetic
+numpy>=1.24.0
+
+# scipy   — scipy.stats.pearsonr, scipy.stats.describe
+scipy>=1.10.0
+
+# ── Visualisation ─────────────────────────────────────────────────────────────
+# plotly  — px.bar, px.line, px.scatter, px.pie, px.box, px.histogram,
+#           px.imshow, px.choropleth, go.Figure, go.Bar, go.Scatter,
+#           make_subplots (secondary_y), add_hline, update_coloraxes
+plotly>=5.15.0
+
+# ── Dashboard ─────────────────────────────────────────────────────────────────
+# streamlit — st.tabs, st.columns, st.metric, st.plotly_chart, st.sidebar,
+#             st.multiselect, st.slider, st.expander, st.dataframe,
+#             st.cache_data, st.divider, st.spinner, st.stop
+#             Note: st.tabs requires streamlit >= 1.12.0
+#                   st.cache_data requires streamlit >= 1.18.0
+#                   st.divider requires streamlit >= 1.16.0
+streamlit>=1.28.0
+
+# ── Dataset access (optional — only needed for auto-download) ─────────────────
+# kaggle  — CLI used via subprocess to download the dataset if
+#           netflix_titles.csv is not already present locally.
+#           The app runs fully without this if the CSV is placed manually.
+kaggle>=1.5.0
